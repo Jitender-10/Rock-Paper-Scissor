@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <button onclick="
+        decider('Rock');
+    " class="deco"><img src="rock-emoji.png" class="emoji-size"></button>
+    <button onclick="
+        decider('Paper');
+    " class="deco"><img src="paper-emoji.png" class="emoji-size"></button>
+    <button onclick="
+        decider('Scissor');
+    " class="deco"><img src="scissor-emoji.png" class="emoji-size"></button>
+    <p class="score-js"></p>
+    <p class="bothMove"></p>
+    <p class="disScoreCard scoreCard"></p>
+    <button onclick="
+        scoreCard.Wins=0;
+        scoreCard.Losses=0;
+        scoreCard.Tie=0;
+        localStorage.removeItem('scoreCard');
+        forScore();    
+    " class="resetDeco">Reset Score</button>
+    <script src="index.js"></script>
+</body>
+
+</html>

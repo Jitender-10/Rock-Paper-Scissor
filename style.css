@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    color:white;
+    font-family:Montserrat, sans-serif;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color:yellow;
+}
+
+.emoji-size{
+    height:60px;
+}
+
+.deco{
+    width:125px;
+    height: 125px;
+    background-color:transparent;
+    border:2px solid white;
+    cursor: pointer;
+    border-radius:50%;
+
+}
+
+.disScoreCard, .score-js, .bothMove {
+    font-size: 26px;
+}
+
+.resetDeco{
+    height:50px;
+    font-size:20px;
+    width: 150px;
+    border-radius: 50%;
+    border:none;
+    background-color: rgb(228, 228, 13);
+    cursor: pointer;
+}
+
+.resetDeco:active{
+    opacity:50%;
+}
