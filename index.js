@@ -71,6 +71,30 @@ function compMove(){
     return cmove;
     
 }
+let con = false;
+let intervalId;
+
+function autoPlay(){
+    
+    if(!con){
+        intervalId = setInterval(() => {
+            const autoMove = compMove();
+            
+            decider(autoMove);
+    
+        }, 1000);
+        con=true;
+        
+
+    }else{
+        clearInterval(intervalId);
+        con=false;
+        
+
+    }
+    
+    
+}
 
 
 
